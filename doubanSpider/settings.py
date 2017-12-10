@@ -13,8 +13,10 @@ BOT_NAME = 'doubanSpider'
 
 SPIDER_MODULES = ['doubanSpider.spiders']
 NEWSPIDER_MODULE = 'doubanSpider.spiders'
-
-
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
+ITEM_PIPELINES = {
+    'doubanSpider.pipelines.DoubanspiderPipeline': 300
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'doubanSpider (+http://www.yourdomain.com)'
 
